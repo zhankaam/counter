@@ -1,0 +1,17 @@
+.maxValue {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fc1313;
+    font-size: 80px;
+    font-family: Bahnschrift;
+}
+.value {
+    font-size: 80px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Bahnschrift;
+}
