@@ -1,0 +1,20 @@
+.screen {
+    width: 100%;
+    height: 70px;
+    border: 2px solid #34495E;
+    border-radius: 6px;
+    padding: 10px 0;
+}
+.input {
+    border-color: #34495E;
+    border-radius: 10px;
+    margin: 8px;
+}
+.inputError {
+    border-color: red;
+    border-radius: 10px;
+}
+.buttons {
+    text-align: center;
+    margin: 10px;
+}

@@ -1,4 +1,5 @@
-import {ChangeEvent} from "react";
+import React, {ChangeEvent} from "react";
+import s from "./Display.module.css"
 
 type PropsType = {
     name: string
@@ -9,17 +10,17 @@ type PropsType = {
 
 
 const Input = (props: PropsType) => {
-    const { name, setValue, value, error } = props
+    const { name, setValue, error } = props
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         setValue(+e.currentTarget.value)
     }
 
     return (
-        <div className='item'>
+        <div className={s.wrapper}>
             <span >{name}</span>
             <input type="number"
                    min='-1'
-                   className={error ? 'inputError' : 'input'}
+                   className={error ? s.inputError : s.input}
                    onChange={onChangeHandler} />
         </div>
     )

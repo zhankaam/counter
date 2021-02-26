@@ -1,6 +1,7 @@
-import React, { ChangeEvent, useState, useEffect, useCallback } from 'react';
+import React, {  useState, useEffect, useCallback } from 'react';
 import Button from "../Button";
 import Input from "./Input";
+import s from './Display.module.css'
 
 type PropsType = {
     setStartValue: (value: number) => void
@@ -20,11 +21,11 @@ const Display = (props: PropsType) => {
 
     const isError = useCallback(() => {
         if (minValueLocal < 0) {
-            setError('min не может быть меньше 0')
+            setError( `enter value and press 'set'`)
         } else if (minValueLocal === maxValueLocal) {
-            setError('min не может быть равен max')
+            setError( `Incorrect value!`)
         } else if (minValueLocal > maxValueLocal) {
-            setError('min не может быть больше max')
+            setError(`Incorrect value!`)
         } else {
             setError('')
         }
@@ -40,12 +41,12 @@ const Display = (props: PropsType) => {
         setCount(minValueLocal)
     }
 
-    return <div className='count'>
-        <div className='displaying'>
-            <Input name={'min value'} value={minValueLocal} setValue={setMinValueLocal} error={error} />
-            <Input name={'max value'} value={maxValueLocal} setValue={setMaxValueLocal} error={error} />
+    return <div className={s.wrapper}>
+        <div className={s.screen}>
+            <Input name={'min value:'} value={minValueLocal} setValue={setMinValueLocal} error={error}  />
+            <Input name={'max value:'} value={maxValueLocal} setValue={setMaxValueLocal} error={error} />
         </div>
-        <div className='displaying1'>
+        <div className={s.buttons}>
             <Button title={'set'} onClick={onChangeHandler} disabled={error !== ''} />
         </div>
     </div>

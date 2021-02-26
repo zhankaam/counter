@@ -1,4 +1,5 @@
 import React from 'react';
+import s from "./Count.module.css"
 
 type ButtonPropsType = {
     title: string
@@ -8,7 +9,7 @@ type ButtonPropsType = {
 
 const Button = (props: ButtonPropsType) => {
 
-    return <button className='button' onClick={props.onClick} disabled={props.disabled}>
+    return <button className={s.buttonSet} onClick={props.onClick} disabled={props.disabled}>
         {props.title}
     </button>
 }

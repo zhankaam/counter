@@ -15,3 +15,40 @@
     align-items: center;
     font-family: Bahnschrift;
 }
+.interface {
+    width: 100%;
+    height: 70px;
+    border: 2px solid #34495E;
+    border-radius: 6px;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: serif;
+    font-size: medium;
+    color: #2C3E50 ;
+}
+.maxValue {
+    color: red;
+}
+.number {
+    color: #34495E;
+}
+.buttonSet {
+    width: 50px;
+    height: 30px;
+    background-color: #808B96 ;
+    border-radius: 15px;
+    color: #212F3D ;
+    font-weight: bold;
+}
+.buttonSet:hover {
+    width: 50px;
+    height: 30px;
+    background-color: #808B96;
+    border-radius: 15px;
+    color: #212F3D ;
+}
+.button {
+    text-align: center;
+    margin: 10px;
+}

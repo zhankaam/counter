@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+}
+.display {
+    width: 350px;
+    height: 140px;
+    border: 2px solid #34495E;
+    border-radius: 13px;
+    margin: 10px;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: Georgia;
+    background: #E5E7E9;
+    color: #2C3E50 ;
+}
+.count {
+    width: 350px;
+    height: 140px;
+    border: 2px solid #34495E;
+    border-radius: 13px;
+    margin: 10px;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: "Courier New";
+    background: #E5E7E9;
+}

@@ -1,5 +1,5 @@
-import React, {ChangeEvent, useState} from 'react';
-import './App.css'
+import React, { useState} from 'react';
+import s from './App.module.css'
 import {Count} from "./Components/Count";
 import Display from "./Components/Display/Display";
 
@@ -21,20 +21,24 @@ function App() {
         setCount(startValue)
     }
 
-    return (<div className={"App"}>
-        <Display setStartValue={setStartValue}
-                 setMaxValue={setMaxValue}
-                 startValue={startValue}
-                 maxValue={maxValue}
-                 error={error}
-                 setError={setError}
-                 setCount={setCount}/>
-        <Count inc={inc}
-               reset={reset}
-               count={count}
-               maxValue={maxValue}
-               startValue={startValue}
-               error={error}  />
+    return (<div className={s.container}>
+        <div className={s.display}>
+            <Display setStartValue={setStartValue}
+                     setMaxValue={setMaxValue}
+                     startValue={startValue}
+                     maxValue={maxValue}
+                     error={error}
+                     setError={setError}
+                     setCount={setCount}/>
+        </div>
+        <div className={s.count}>
+            <Count inc={inc}
+                   reset={reset}
+                   count={count}
+                   maxValue={maxValue}
+                   startValue={startValue}
+                   error={error}  />
+        </div>
     </div>)
 
 }
