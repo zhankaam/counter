@@ -43,11 +43,19 @@ const Display = (props: PropsType) => {
 
     return <div className={s.wrapper}>
         <div className={s.screen}>
-            <Input name={'min value:'} value={minValueLocal} setValue={setMinValueLocal} error={error}  />
-            <Input name={'max value:'} value={maxValueLocal} setValue={setMaxValueLocal} error={error} />
+            <Input name={'min value:'}
+                   value={minValueLocal}
+                   setValue={setMinValueLocal}
+                   error={error}  />
+            <Input name={'max value:'}
+                   value={maxValueLocal}
+                   setValue={setMaxValueLocal}
+                   error={error} />
         </div>
         <div className={s.buttons}>
-            <Button title={'set'} onClick={onChangeHandler} disabled={error !== ''} />
+            <Button title={'set'}
+                    onClick={onChangeHandler}
+                    disabled={error !== ''} />
         </div>
     </div>
 }
