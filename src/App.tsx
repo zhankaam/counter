@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import s from './App.module.css'
-import {Count} from "./Components/Count";
+import {Count} from "./Components/Count/Count";
 import Display from "./Components/Display/Display";
 
 

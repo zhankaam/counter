@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
-import Scoreboard from "./Scoreboard";
+import Button from "../Button";
+import Scoreboard from "../Scoreboard";
 import s from "./Count.module.css"
 
 type CountPropsType = {
