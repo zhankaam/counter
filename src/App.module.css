@@ -5,22 +5,24 @@
     margin-top: 60px;
 }
 .display {
-    width: 350px;
-    height: 140px;
-    border: 2px solid #34495E;
+    width: 320px;
+    height: 200px;
+    border: 2px solid #457b9d;
     border-radius: 13px;
     margin: 10px;
     padding: 10px;
     font-size: medium;
     font-weight: bold;
-    font-family: Georgia;
-    background: #E5E7E9;
+    font-family: 'Newsreader', serif;
     color: #2C3E50 ;
+}
+.display:hover {
+    border: 2px solid #457b9d;
 }
 .count {
     width: 350px;
-    height: 140px;
-    border: 2px solid #34495E;
+    height: 190px;
+    border: 2px solid #457b9d;
     border-radius: 13px;
     margin: 10px;
     padding: 10px;

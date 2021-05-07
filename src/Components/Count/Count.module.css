@@ -5,7 +5,7 @@
     align-items: center;
     color: #fc1313;
     font-size: 80px;
-    font-family: Bahnschrift;
+
 }
 .value {
     font-size: 80px;
@@ -13,12 +13,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Bahnschrift;
+
 }
 .interface {
     width: 100%;
     height: 70px;
-    border: 2px solid #34495E;
+    border: 2px solid #457b9d;
     border-radius: 6px;
     padding: 10px 0;
     text-align: center;
@@ -32,22 +32,22 @@
 }
 .number {
     color: #34495E;
+    font-family: 'Newsreader', serif;
 }
 .buttonSet {
-    width: 50px;
+    width: 80px;
     height: 30px;
-    background-color: #808B96 ;
-    border-radius: 15px;
-    color: #212F3D ;
     font-weight: bold;
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #60a3bc;
+    padding: 20px;
+    border-radius: 50px;
+    border: none !important;
+    font-size: 17px;
+    font-family: 'Karla', sans-serif;
 }
-.buttonSet:hover {
-    width: 50px;
-    height: 30px;
-    background-color: #808B96;
-    border-radius: 15px;
-    color: #212F3D ;
-}
+
 .button {
     text-align: center;
     margin: 10px;

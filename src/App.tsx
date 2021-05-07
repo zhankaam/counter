@@ -31,7 +31,7 @@ function App() {
                      setError={setError}
                      setCount={setCount}/>
         </div>
-        <div className={s.count}>
+        <div className={s.display}>
             <Count inc={inc}
                    reset={reset}
                    count={count}
